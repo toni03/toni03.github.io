@@ -19,14 +19,14 @@ $(function() {
 			}
 			$.ajax({
 				//                url: "././mail/contact_me.php",
-				url: "http://toni03.github.io/mail/contact_me.php",
-				type: "POST",
-				data: {
-					name: name,
-					phone: phone,
-					email: email,
-					message: message
-				},
+				url: "http://toni03.github.io/mail/contact_me.php?name="+name+"&phone="+phone+"&email="+email+"&message="+message,
+				type: "GET",
+				//				data: {
+				//					name: name,
+				//					phone: phone,
+				//					email: email,
+				//					message: message
+				//				},
 				cache: false,
 				success: function() {
 					// Success message
